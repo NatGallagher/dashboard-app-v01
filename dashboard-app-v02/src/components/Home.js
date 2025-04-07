@@ -1,7 +1,7 @@
 function Home() {
     return (
       <>
-        <p>Dashboard App v1.1</p>
+        <p>Dashboard App v1.2</p>
       </>
     );
   }
