@@ -13,6 +13,9 @@ function Home() {
         </p>
         <p>
           <Link to="/register">Register</Link>
+        </p>
+        <p>
+          <Link to="/dashboard">Dashboard</Link>
         </p> 
       </>
     );
