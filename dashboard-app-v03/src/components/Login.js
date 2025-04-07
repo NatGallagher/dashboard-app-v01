@@ -8,9 +8,9 @@ function Login() {
                 <label>Password: </label><input type="text" placeholder="* password" maxLength={25}></input>
                 <p></p>
                 <button>Submit</button>
-                <p></p>
-                <p>Register</p>
             </form>
+            <p></p>
+            <p>Register</p>
         </>
     )
 }
