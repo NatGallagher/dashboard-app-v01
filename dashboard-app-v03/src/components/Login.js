@@ -1,3 +1,6 @@
+import {Link} from "react-router-dom"
+
+
 function Login() {
     return (
         <>
@@ -10,7 +13,9 @@ function Login() {
                 <button>Submit</button>
             </form>
             <p></p>
-            <p>Register</p>
+            <p>
+                <Link to="/register">Register</Link> {" | "} <Link to="/">Home</Link>
+            </p>
         </>
     )
 }

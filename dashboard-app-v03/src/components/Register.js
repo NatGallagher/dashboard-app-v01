@@ -1,3 +1,6 @@
+import {Link} from "react-router-dom"
+
+
 function Register() {
     return (
         <>
@@ -13,7 +16,9 @@ function Register() {
                 <button>Submit</button>
             </form>
             <p></p>
-            <p>Login</p>
+            <p>
+                <Link to="/login">Login</Link> {" | "} <Link to="/">Home</Link>
+            </p>
         </>
     )
 }
