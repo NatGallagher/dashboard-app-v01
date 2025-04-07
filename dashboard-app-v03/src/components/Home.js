@@ -1,4 +1,4 @@
-
+import {Link} from "react-router-dom"
      
 
 
@@ -8,8 +8,12 @@ function Home() {
       <>
         <p>Dashboard App v3.0</p>
         <p></p>
-        <p>Login</p>
-        <p>Register</p> 
+        <p>
+          <Link to="/login">Login</Link>
+        </p>
+        <p>
+          <Link to="/register">Register</Link>
+        </p> 
       </>
     );
   }
