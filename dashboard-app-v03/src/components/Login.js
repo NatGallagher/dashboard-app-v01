@@ -1,8 +1,11 @@
-import {Link} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 import { useRef, useState } from "react";
 
 
 function Login() {
+    
+ //link to a page in code - redirect
+        let navigate = useNavigate();
 
     const txtusername = useRef("")
     const txtpassword = useRef("")
@@ -10,6 +13,7 @@ function Login() {
 
     const handleLogin = (e) => {
 
+       
         e.preventDefault()
 
         console.log("handleLogin");
