@@ -1,16 +1,34 @@
 import {Link} from "react-router-dom"
+import { useRef, useState } from "react";
 
 
 function Login() {
+
+    const txtusername = useRef("")
+    const txtpassword = useRef("")
+    const [msgText, setMsgText] = useState("")
+
+    const handleLogin = (e) => {
+
+        e.preventDefault()
+
+        console.log("handleLogin");
+        //validate field
+
+        //api request
+    }
+
     return (
         <>
             <h2>Login</h2>
             <p></p>
             <form>
-                <label>Username: </label><input type="text" placeholder="* username" maxLength={25}></input><br/>
-                <label>Password: </label><input type="password" placeholder="* password" maxLength={25}></input>
+                <label>Username: </label><input ref={txtusername} type="text" placeholder="* username" maxLength={25}></input><br/>
+                <label>Password: </label><input ref={txtpassword} type="password" placeholder="* password" maxLength={25}></input>
                 <p></p>
-                <button>Submit</button>
+                <p>{msgText}</p>
+                <p></p>
+                <button onClick={(e) => handleLogin(e)}>Submit</button>
             </form>
             <p></p>
             <p>
