@@ -9,7 +9,7 @@ function Login() {
 
     const txtusername = useRef("")
     const txtpassword = useRef("")
-    const [msgText, setMsgText] = useState("")
+    const [msgText, setMsg] = useState("")
 
     const handleLogin = (e) => {
 
@@ -23,7 +23,7 @@ function Login() {
         //api request
 
         let _msg = "";
-        let _replit_url = "https://d4a4b615-8c0c-4341-adae-e90a82bcb576-00-2xx2fade5wfsh.worf.replit.dev";
+        let _replit_url = "https://ca650cb1-a260-4991-b157-0b621d6b2ad9-00-it9nsgak45wb.picard.replit.dev";
     
         const _uid = txtusername.current.value
         const _pwd = txtpassword.current.value
