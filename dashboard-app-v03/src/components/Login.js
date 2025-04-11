@@ -13,6 +13,7 @@ function Login() {
         e.preventDefault()
 
         console.log("handleLogin");
+        console.log(`username: ${txtusername} password: ${txtpassword}`)
         //validate field
 
         //api request
